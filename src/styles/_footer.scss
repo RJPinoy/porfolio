@@ -1,0 +1,36 @@
+@import '_mixins.scss';
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    .socials {
+        @include flex-center;
+        flex-flow: row;
+        justify-content: end;
+
+        div {
+            width: 5%;
+            aspect-ratio: 1/1;
+            // background-color: brown;
+            margin: 0 5% 2% 0;
+        }
+
+        #linkedin {
+            @include background-image;
+            background-image: url('/linkedIn_logo.png');
+        }
+        #github {
+            @include background-image;
+            background-image: url('/github_logo.png');
+            background-color: white;
+            border-radius: 50%;
+        }
+        #gmail {
+            @include background-image;
+            background-image: url('/gmail_logo.png');
+        }
+    }
+}
